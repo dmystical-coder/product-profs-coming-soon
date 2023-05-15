@@ -32,8 +32,13 @@ nav {
   align-items: center;
   gap: .5rem;
 }
-.logo-container img {
-  width: 12rem;
+.logo-container{
+ background: url(./product-profs-logo.png);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ height: 200px;
+ width: 100%;
 }
 
 main {
@@ -99,10 +104,14 @@ footer img{
   height: 48px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   nav {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .logo-container{
+    width: 35%;
+    background-size: cover;
   }
   .display-none{
     display: block;
